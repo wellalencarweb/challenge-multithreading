@@ -9,7 +9,7 @@ import (
 )
 
 func FindCep(ctx context.Context, cep string) (domain.Result, error) {
-	ctxTimeout, cancel := context.WithTimeout(ctx, 1*time.Second)
+	ctxTimeout, cancel := context.WithTimeout(ctx, 100*time.Microsecond)
 	defer cancel()
 
 	ch := make(chan domain.Result, 2)

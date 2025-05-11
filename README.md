@@ -15,12 +15,11 @@ Este projeto é um **CLI (Command Line Interface)** em Go que realiza consultas 
 ## 📦 Estrutura do Projeto
 
 ```
-cepfinder/
+challenge-multithreading/
 ├── cmd/              # CLI principal
 ├── fetchers/         # Comunicação com APIs externas
 ├── domain/           # Structs e modelos de dados
 ├── service/          # Lógica para decidir a resposta mais rápida
-├── utils/            # Funções auxiliares (timeout, etc)
 ├── main.go           # Inicializador da aplicação
 └── go.mod
 ```
